@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .header{
+            width: 1340px;
+            height: 800px;           
+        }
+        .readMore{
+            border: 2px solid blue;
+            height: 30px;
+            width: 120px;
+            position: absolute;
+            top: 220px;
+            left: 46%;
+        }
+        .pastel{
+            width: 1337px;
+            margin: 0 7px;
+        }
+        .pa1{
+            font-family:  Bold;
+            font-size: 70px;
+            margin: 0 30px 50px 30px;   
+            text-align: center;
+        }
+        .pa1:hover{
+            color: red;
+        }
+        .linea{
+            text-align: center;
+        }
+        .columnas{
+            width: 1300px;
+            height: 550px;
+            margin: 20px 30px;
+        }
+        .pa2{
+            font-family: Bold;
+            font-size: 35px;
+            margin: 10px 0 0 0; 
+            text-align: center;
+        }
+        .pa2:hover{
+            color: red;
+        }
+        .colum{
+            width: 29%;
+            float: left;
+            margin-left: 3%;
+        }
+        .colum img{
+            width: 100%;
+            height: 350px;
+        }
+        .form{
+            width: 1200px;
+            border-radius: 10px;
+            color: #000000;
+            margin-bottom: 110px;
+            margin: 0 40px 110px 40px;
+            padding: 25px;
+        }
+        .lbl{
+            font-size: 18px;
+        }
+        .control{
+            width: 100%;
+            border-bottom: 2px solid #000000;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin: 30px 8px 0 8px;
+            box-sizing: border-box;
+        }
+        .Area{
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        .boton{
+            width: 145px;
+            height: 45px;
+            font-size: 18px;
+            border: 2px solid black;
+            font-family: sans-serif;
+            background: white;
+            margin-left: 8px;
+        }
+        .control::placeholder{
+            padding: 6px 5px;
+        }
+        .control:hover{
+            outline: none;
+            border-bottom: 2px solid #000000;
+        }
+        .boton:hover{
+            outline: none;
+            border-bottom: 2px solid #000000;
+            background: black;
+            color: white;
+        }
+        .Fijo{
+            background-color: black;
+            color: white;
+            height: 100px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        .Fijo p{
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="imagenes/header.jpg" alt="" class="pastel">
+        <input type="submit" value="READ MORE" class="readMore">
+        <P class="pa1">Ponche segoviano, recipe for one of the<br> softest and most delicate traditional cakes</P>
+        <p class="linea">________________________________________________________________________________________________________________________________________________________</p>
+    </div>
+    <div class="columnas">
+        <div class="colum c1">
+            <img src="imagenes/1.jpg" alt="">
+            <p class="pa2">How to clean your fridge and freezer inside and out: tips and tricks to keep your fridge aparkling clean</p>
+        </div>
+        <div class="colum c2">
+            <img src="imagenes/2.jpg" alt="">
+            <p class="pa2">Dark chocolate and peanut cookies: easy recipe for a crunchy treat with a sweet and salty contrast</p>
+        </div>
+        <div class="colum c3">
+            <img src="imagenes/2.jpg" alt="">
+            <p class="pa2">Beef stew with potatoes: the most classic recipe for a dish that never fails</p>
+        </div>
+       
+    </div>
+    <div class="form">
+        <form action="">
+            <label class="pa2"> Contact us</label>
+            <input type="text" placeholder="YOUR NAME" class="control">
+            <input type="number" placeholder="YOUR NUMBER" class="control">
+            <input type="email" placeholder="YOUR EMAIL" class="control">
+            <textarea name="" id="" class="control Area"></textarea>
+            <input type="submit" value="Submit" class="boton">
+        </form>
+    </div>
+    <div class="Fijo">
+        <p>We use third-party cookies to generate audience statis and show personalized advertising<br> by analyzing your browsing. if you continue browsing you will be accepting their use</p>
+    </div>
+</body>
+</html>

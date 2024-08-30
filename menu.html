@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<!--barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-5" href="index.html"><img src="imagenes/imag-web/logos/logo-pizza-removebg-preview.png" class="logo-pizza"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbar-scroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav my-2 my-lg-0 navbar-nav ms-auto me-5" style="--bs-scroll-height: 100px;">           
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html"><img src="imagenes/imag-web/logos/menu.png" alt="" class="menu">MENÚ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html#ofertas" ><img src="imagenes/imag-web/logos/ofertas.png" alt="" class="oferta">OFERTAS DE HOY</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#IniciaSeccion"><img src="imagenes/imag-web/logos/usuario (1).png" class="user"> INICIAR SESIÓN</a>
+              </li>   
+            </ul>
+          </div>
+        </div>
+    </nav>
+<!--barra de navegacion-->
+<!--Iniciar Seccion-->
+<div class="modal fade" id="IniciaSeccion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="IniciaSeccionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="IniciaSeccionModalLabel">Iniciar Seccion</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="ModalIEmail1" aria-describedby="emailHelp" placeholder="Correo Electronico">
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" id="ModaIPassword1" placeholder="Contraseña">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="ModalCheck1">
+              <label class="form-check-label" for="ModalCheck1">Recordarme</label>
+            </div>
+            <div class="mb-2">
+              <button type="submit" class="btn btn-primary bs">Ingresar</button>
+            </div>
+            <div class="mb-3">
+              ¿No tienes una cuenta? <span data-bs-toggle="modal" data-bs-target="#Registro" data-bs-dismiss="modal">Registrate</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Iniciar Seccion-->
+  <!--Registrarse-->
+  <div class="modal fade" id="Registro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="RegistroModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="RegistroModalLabel">Registrarse</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="ModalIEmail1" aria-describedby="emailHelp" placeholder="Correo Electronico">
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" id="ModaIPassword1" placeholder="Contraseña">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="ModalCheck1">
+              <label class="form-check-label" for="ModalCheck1">Estoy de acuerdo con <a href="Terminos-y-condiciones">Términos y Condiciones</a></label>
+            </div>
+            <button type="submit" class="btn btn-primary bs">Ingresar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Registrarse-->
+    <ul class="nav justify-content-center" id="nav-secundario">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#pizza">PIZZA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#complementos">COMPLEMENTOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#bebidas">BEBIDAS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#ofertas">OFERTAS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#extra" tabindex="-1" aria-disabled="true">EXTRAS</a>
+      </li>
+    </ul>
+<!--contenido-->
+   <div class="container-fluid">
+      <h2 class="mt-3" id="pizza">Pizzas</h2>
+      <hr>
+        <div class="row mb-5">
+           <div class="col-md-3 col-sm-6">
+               <div class="card">
+                   <img src="imagenes/imag-web/pizza/pizza-jamon.webp" class="card-img-top " alt="...">
+                   <div class="card-body">
+                      <h5 class="card-title">Pizza de Jamon</h5>
+                       <p class="card-text">Deliciosa pizza con generosas lonchas de jamón, mozzarella derretida y salsa de tomate sobre una base crujiente.</p>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-3 col-sm-6">
+               <div class="card">
+                   <img src="imagenes/imag-web/pizza/pizza-vegetariana.webp" class="card-img-top " alt="...">
+                   <div class="card-body">
+                      <h5 class="card-title">Pizza Vegetariana</h5>
+                       <p class="card-text">Crujiente pizza cargada de pimientos, champiñones, cebolla, tomate, espinacas y mozzarella fresca.</p>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-3 col-sm-6">
+               <div class="card">
+                   <img src="imagenes/imag-web/pizza/pizza-3-quesos-y-jamon.webp" class="card-img-top " alt="...">
+                   <div class="card-body">
+                      <h5 class="card-title">Pizza de 3 Quesos y Jamon</h5>
+                       <p class="card-text">Exquisita combinación de mozzarella, cheddar, parmesano y jamón en una pizza de base crocante.</p>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="imagenes/imag-web/pizza/pizza-pepperoni.jpeg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza de Pepperoni</h5>
+                    <p class="card-text">Clásica pizza con pepperoni picante, mozzarella fundida y salsa de tomate sobre una masa perfecta.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/pizza/pizza-cuatro-estaciones.jpg" class="card-img-top " alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Pizza de 4 Estaciones</h5>
+                      <p class="card-text">Cuatro sabores: champiñones, alcachofas, jamón, y aceitunas, cada uno en su propio cuarto de la pizza.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/pizza/pizza-hawaina.jpeg" class="card-img-top " alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Pizza Hawaiiana</h5>
+                      <p class="card-text">Dulce y salada: jugosa piña y jamón sobre una base de queso, combinando lo mejor de ambos mundos.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/pizza/pizza-super-suprema.jpg" class="card-img-top " alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Pizza Super Suprema</h5>
+                      <p class="card-text">Cargada de ingredientes: pepperoni, salchicha, pimientos, champiñones, cebolla, y aceitunas, en una deliciosa combinación.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="imagenes/imag-web/pizza/pizza-trio-de-carnes.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza Trio de Carnes</h5>
+                    <p class="card-text">Tres carnes irresistibles: pepperoni, jamón y salchicha, sobre una base de queso fundido y salsa de tomate.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/pizza/pizza-italiana.webp" class="card-img-top " alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Pizza Italiana</h5>
+                      <p class="card-text">Delgada masa crujiente, salsa de tomate fresca, mozzarella, albahaca y aceite de oliva, sabor auténtico de Italia.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/pizza/pizza-suprema.jpg" class="card-img-top " alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Pizza Suprema</h5>
+                      <p class="card-text">Abundante mezcla de carnes, vegetales frescos y queso, una explosión de sabores en cada rebanada.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="imagenes/imag-web/pizza/pizza-toscana-6-guesos.webp" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza Toscana 6 Quesos</h5>
+                    <p class="card-text"> Mezcla cremosa de seis quesos italianos sobre una masa crujiente, ideal para los amantes del queso.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      <h2 class="mt-3" id="complementos">Complementos</h2>
+      <hr>
+      <div class="row mb-5">
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/complementos/complementos-calzones.png" class="card-img-top " alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Calzone</h5>
+                      <p class="card-text">Masa rellena de queso, salsa de tomate y otros ingredientes, cerrada en media luna, horneada hasta dorarse.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/complementos/complementos-alitas-de-pollo-bbq.png" class="card-img-top " alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Alitas de Pollo con BBQ</h5>
+                      <p class="card-text">Alitas de pollo jugosas, marinadas y cubiertas con salsa barbacoa dulce y ahumada, cocinadas hasta quedar tiernas.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/complementos/complementos-alitas-de-pollo.png" class="card-img-top " alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Alitas de Pollo</h5>
+                      <p class="card-text">Crujientes alitas de pollo, perfectas para compartir, con un delicioso sabor y textura inigualable.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+           <div class="card">
+               <img src="imagenes/imag-web/complementos/complementos-bacon-cheese-bread.png" class="card-img-top " alt="...">
+               <div class="card-body">
+                   <h5 class="card-title">Bacon Cheese Bread</h5>
+                   <p class="card-text">Pan cubierto con queso derretido y crujiente tocino, horneado hasta lograr una textura dorada y sabrosa.</p>
+               </div>
+           </div>
+         </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="imagenes/imag-web/complementos/complementos-alitas-de-pollo-salsa-buffalo.png" class="card-img-top " alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">Alitas de Pollo con Salsa Buffalo</h5>
+                    <p class="card-text">Alitas de pollo bañadas en una salsa Buffalo picante, con un toque ácido y picante que deleita los sentidos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="imagenes/imag-web/complementos/complementos-crazy-cheese-bread.png" class="card-img-top " alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">Crazy Cheese Bread</h5>
+                    <p class="card-text">Pan horneado, cubierto con una mezcla de quesos derretidos y especias, ideal como aperitivo o acompañamiento.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <h2 class="mt-3" id="bebidas">Bebidas</h2>
+      <hr>
+      <div class="row mb-5">
+        <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/bebidas/bebidas-pepsi-2l.png" class="card-img-top " alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Pepsi 2L</h5>
+                      <p class="card-text">Masa rellena de queso, salsa de tomate y otros ingredientes, cerrada en media luna, horneada hasta dorarse.</p>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/bebidas/bebidas-7upL.png" class="card-img-top " alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">7UP 2L</h5>
+                      <p class="card-text">Alitas de pollo jugosas, marinadas y cubiertas con salsa barbacoa dulce y ahumada, cocinadas hasta quedar tiernas.</p>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/bebidas/bebidas-mirinda-2L.png" class="card-img-top " alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Mirinda Naranja 2L</h5>
+                      <p class="card-text">Crujientes alitas de pollo, perfectas para compartir, con un delicioso sabor y textura inigualable.</p>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+           <div class="card">
+               <img src="imagenes/imag-web/bebidas/bebidas-aguazul-20oz.png" class="card-img-top " alt="...">
+               <div class="card-body">
+                   <h5 class="card-title">AguaAzul 20oz</h5>
+                   <p class="card-text">Pan cubierto con queso derretido y crujiente tocino, horneado hasta lograr una textura dorada y sabrosa.</p>
+               </div>
+           </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="imagenes/imag-web/bebidas/bebidas-pepsi-12L.png" class="card-img-top " alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">Pepsi 1/2L</h5>
+                    <p class="card-text">Alitas de pollo bañadas en una salsa Buffalo picante, con un toque ácido y picante que deleita los sentidos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="imagenes/imag-web/bebidas/bebidas-7up-12L..png" class="card-img-top " alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">7UP 1/2L</h5>
+                    <p class="card-text">Pan horneado, cubierto con una mezcla de quesos derretidos y especias, ideal como aperitivo o acompañamiento.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/bebidas/bebidas-mirinda-12L.png" class="card-img-top " alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Mirinda Naranja 1/2L</h5>
+                      <p class="card-text">Crujientes alitas de pollo, perfectas para compartir, con un delicioso sabor y textura inigualable.</p>
+                  </div>
+              </div>
+        </div>
+      </div>
+      <h2 class="mt-3" id="ofertas">Ofertas</h2>
+      <hr>
+      
+      <h2 class="mt-3" id="extra">Extras</h2>
+      <hr>
+      <div class="row mb-5">
+        <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/complementos/complementos-palitos-rellenos-de-queso.png" class="card-img-top " alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Palitos Rellenos de Queso</h5>
+                      <p class="card-text">Masa rellena de queso, salsa de tomate y otros ingredientes, cerrada en media luna, horneada hasta dorarse.</p>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/complementos/complementos-PAN-DE-AJO.png" class="card-img-top " alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Pan de Ajo</h5>
+                      <p class="card-text">Alitas de pollo jugosas, marinadas y cubiertas con salsa barbacoa dulce y ahumada, cocinadas hasta quedar tiernas.</p>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <img src="imagenes/imag-web/complementos/complementos-salsa-ranch.jpg" class="card-img-top " alt="...">
+                  <div class="Salsa Ranch">
+                      <h5 class="card-title">Salsa Ranch</h5>
+                      <p class="card-text">Crujientes alitas de pollo, perfectas para compartir, con un delicioso sabor y textura inigualable.</p>
+                  </div>
+              </div>
+        </div>
+       </div>
+    </div>
+<!--contenido-->
+<!--Panel-->
+    <div class="container-fluid mb-auto">
+      <div class="panel">
+        <img src="imagenes/imag-web/logos/panel-pizza.jpg" alt="">
+      </div>
+    </div>
+<!--Panel-->
+<!--footer-->
+    <div class="container-fluid " id="footer">
+        <div class="row">
+          <div class="col-2 d-flex flex-column align-items-start mt-5">
+            <a href="index.html"><img src="imagenes/imag-web/logos/logo-pizza-removebg-preview.png" class="logo-pizza"></a>
+          </div>
+          <div class="col-3 d-flex flex-column align-items-start mt-5">
+            <h3>Acerca de Pizza</h3>
+            <a href="menu.html">Nuestro Menú</a>
+            <a href="#">Nuestra Marca</a>
+            <a href="#">Sostenibilidad</a>
+            <a href="#">Sobre Nosotros</a>
+          </div>
+          <div class="col-3 d-flex flex-column align-items-start mt-5">
+            <h3>Servicio al Cliente</h3>
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="https://www.magneto365.com/co/empresas/aco">Trabaja con nosotros</a>
+          </div>
+          <div class="col-3 d-flex flex-column align-items-start mt-5">
+            <h3>Legal</h3>
+            <a href="legal/Terminos-y-condiciones.pdf" target="_blank">Términos y Condiciones</a>
+            <a href="legal/Tratamiento-de-Datos.pdf" target="_blank">Política de Tratamiento de Datos</a>
+            <a href="legal/Política-Cookies.pdf" target="_blank">Cookies</a>
+          </div>
+        </div>
+    </div>
+<!--footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
